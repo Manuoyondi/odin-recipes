@@ -5,17 +5,17 @@
 }
 
 * {
-    margin: 0 0 10px 0;
+    margin: 0;
     padding: 0;
     background-color: rgb(205, 210, 255);
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .background {
     background-color: rgb(205, 210, 255);
-    margin: 20px auto;
+    margin: 10px auto;
     width: 0 auto;
 }
 .recipes {
@@ -39,7 +39,7 @@ div {
 
 
 
-.description {
+/* .description {
     padding: 1px 20px;
     display: inline-block;
     width: 500px;
@@ -52,4 +52,33 @@ img {
     height: 250px;
     vertical-align: top;
     margin: 10px 5px 0 0;
+} */
+.background {
+    display: flex;
+}
+
+img {
+    flex: 0 1 200px;
+    min-width: 10px;
+}
+
+.description {
+    flex: 1;
+    border: 10px inset #f5f6ea;
+}
+
+.recipe-card {
+    display: flex;
+}
+
+.ingredients {
+    flex: 1;
+    border: 10px inset #f5f6ea;
+    padding-left: 5px;
+}
+
+.directions {
+    flex: 1;
+    border: 10px inset #f5f6ea;
+    padding-left: 5px;
 }
